@@ -1,0 +1,12 @@
+CREATE OR REPLACE TRIGGER tr_orders_per_collectionslot
+BEFORE INSERT ON "ORDER"
+FOR EACH ROW
+DECLARE
+num number(6);
+BEGIN
+    select count(Collection_slot_id) into num from "ORDER" where Collection_slot_id = :NEW.Collection_slot_id;
+    IF num = 20 THEN
+    raise_application_error(20001, 'There can be only 20 orders per collection slot.');
+    END IF;
+END;
+/

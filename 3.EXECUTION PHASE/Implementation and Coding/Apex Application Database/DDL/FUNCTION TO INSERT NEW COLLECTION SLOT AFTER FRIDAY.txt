@@ -1,0 +1,79 @@
+--Function to insert new collection slot after friday
+create or replace function fn_new_slot
+return number
+is
+    v_next_wednesday date;
+    v_next_thursday date;
+    v_next_friday date;
+    v_count number;
+begin
+
+    -- Calculate the dates for the upcoming Wednesday, Thursday, and Friday
+    select NEXT_DAY(TRUNC(SYSDATE)+7, 'WEDNESDAY'),
+           NEXT_DAY(TRUNC(SYSDATE)+7, 'THURSDAY'),
+           NEXT_DAY(TRUNC(SYSDATE)+7, 'FRIDAY')
+    into v_next_wednesday, v_next_thursday, v_next_friday
+    from DUAL;
+
+    select count(*) into v_count from collection_slot  where Slot_Date in(v_next_friday,v_next_thursday,v_next_wednesday);
+
+
+    if v_count = 0 then
+        -- insert collection slots for the upcoming wednesday
+        insert into collection_slot
+        values (null,TO_TIMESTAMP('10:00', 'HH24:MI'), TO_TIMESTAMP('13:00', 'HH24:MI'), v_next_wednesday, 'WED');
+
+        insert into collection_slot 
+        values (null,TO_TIMESTAMP('13:00', 'HH24:MI'), TO_TIMESTAMP('16:00', 'HH24:MI'), v_next_wednesday, 'WED');
+
+        insert into collection_slot 
+        values (null,TO_TIMESTAMP('16:00', 'HH24:MI'), TO_TIMESTAMP('19:00', 'HH24:MI'), v_next_wednesday, 'WED');
+
+        -- insert collection slots for the upcoming thursday
+        insert into collection_slot 
+        values (null, TO_TIMESTAMP('10:00', 'HH24:MI'), TO_TIMESTAMP('13:00', 'HH24:MI'), v_next_thursday, 'THU');
+
+        insert into collection_slot 
+        values (null, TO_TIMESTAMP('13:00', 'HH24:MI'), TO_TIMESTAMP('16:00', 'HH24:MI'), v_next_thursday, 'THU');
+
+        insert into collection_slot 
+        values (null, TO_TIMESTAMP('16:00', 'HH24:MI'), TO_TIMESTAMP('19:00', 'HH24:MI'), v_next_thursday, 'THU');
+
+        -- insert collection slots for the upcoming friday
+        insert into collection_slot 
+        values (null, TO_TIMESTAMP('10:00', 'HH24:MI'), TO_TIMESTAMP('13:00', 'HH24:MI'), v_next_friday, 'FRI');
+
+        insert into collection_slot 
+        values (null, TO_TIMESTAMP('13:00', 'HH24:MI'), TO_TIMESTAMP('16:00', 'HH24:MI'), v_next_friday, 'FRI');
+
+        insert into collection_slot 
+        values (null, TO_TIMESTAMP('16:00', 'HH24:MI'), TO_TIMESTAMP('19:00', 'HH24:MI'), v_next_friday, 'FRI');
+    end if;
+
+    return 1;
+exception
+    when others then
+        return 0;
+end;
+/
+
+--Creating job// executes the fn_new_slot function every Saturday at midnight
+BEGIN
+    DBMS_SCHEDULER.CREATE_JOB (
+        job_name        => 'Collection_Slot_JOB',
+        job_type        => 'PLSQL_BLOCK',
+        job_action      => 'DECLARE BEGIN dbms_output.put_line(fn_new_slot);END;',
+        start_date      => sysdate,
+        repeat_interval => 'freq=weekly; byday= TUE; BYHOUR=0; BYMINUTE=0; BYSECOND=0;',
+        enabled         => TRUE
+    );
+END;
+/
+
+--View Jobs 
+-- SELECT * FROM USER_SCHEDULER_JOBS;
+--Drop Jobs
+-- BEGIN
+--   dbms_scheduler.drop_job(job_name => 'COLLECTION_SLOT_JOB');
+-- END;
+-- /

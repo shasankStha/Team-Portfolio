@@ -1,0 +1,12 @@
+CREATE OR REPLACE TRIGGER tr_no_of_traders
+BEFORE INSERT ON "USER"
+FOR EACH ROW
+DECLARE
+num number(6);
+BEGIN
+    select count(user_id) into num from "USER" where role = 'T';
+    IF num = 10 THEN
+    raise_application_error(20001, 'Number of traders cannot exceed 10.');
+    END IF;
+END;
+/

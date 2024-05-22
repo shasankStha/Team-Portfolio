@@ -1,0 +1,10 @@
+CREATE OR REPLACE TRIGGER tr_new_cart
+AFTER INSERT ON "USER"
+FOR EACH ROW
+BEGIN
+    IF :NEW.Role = 'C' THEN
+        INSERT INTO cart
+        VALUES (null, :NEW.User_id);
+    END IF;
+END;
+/

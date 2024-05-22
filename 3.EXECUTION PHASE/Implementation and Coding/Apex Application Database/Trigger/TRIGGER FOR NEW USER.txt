@@ -1,0 +1,14 @@
+CREATE OR REPLACE TRIGGER tr_new_user
+AFTER INSERT ON "USER"
+FOR EACH ROW
+BEGIN
+    IF :NEW.Role = 'A' THEN
+        INSERT INTO ADMIN VALUES (:NEW.User_id);
+    ELSIF :NEW.Role = 'T' THEN
+        INSERT INTO TRADER VALUES (:NEW.User_id, null, 0);
+    ELSIF :NEW.Role = 'C' THEN
+        INSERT INTO CUSTOMER
+        VALUES (:NEW.User_id, null, null, null, NULL, 1);
+    END IF;
+END;
+/

@@ -1,0 +1,139 @@
+--Trigger for User table
+CREATE OR REPLACE TRIGGER tr_pkuserid
+BEFORE INSERT ON "USER"
+FOR EACH ROW
+BEGIN
+    -- Generate a new user id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(user_id), 0) + 1 INTO :NEW.user_id FROM "USER";
+END;
+/
+
+--Trigger for Shop table
+CREATE OR REPLACE TRIGGER tr_pkshopid
+BEFORE INSERT ON SHOP
+FOR EACH ROW
+BEGIN
+    -- Generate a new shop id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(shop_id), 0) + 1 INTO :NEW.shop_id FROM shop;
+END;
+/
+
+-- Trigger for PRODUCT_CATEGORY table
+CREATE OR REPLACE TRIGGER tr_pkcategoryid
+BEFORE INSERT ON PRODUCT_CATEGORY
+FOR EACH ROW
+BEGIN
+    -- Generate a new category id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Category_id), 0) + 1 INTO :NEW.Category_id FROM PRODUCT_CATEGORY;
+END;
+/
+
+-- Trigger for DISCOUNT table
+CREATE OR REPLACE TRIGGER tr_pkdiscountid
+BEFORE INSERT ON DISCOUNT
+FOR EACH ROW
+BEGIN
+    -- Generate a new discount id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Discount_id), 0) + 1 INTO :NEW.Discount_id FROM DISCOUNT;
+END;
+/
+
+-- Trigger for PRODUCT table
+CREATE OR REPLACE TRIGGER tr_pkproductid
+BEFORE INSERT ON PRODUCT
+FOR EACH ROW
+BEGIN
+    -- Generate a new product id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Product_id), 0) + 1 INTO :NEW.Product_id FROM PRODUCT;
+END;
+/
+
+-- Trigger for REVIEW table
+CREATE OR REPLACE TRIGGER tr_pkreviewid
+BEFORE INSERT ON REVIEW
+FOR EACH ROW
+BEGIN
+    -- Generate a new review id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Review_id), 0) + 1 INTO :NEW.Review_id FROM REVIEW;
+END;
+/
+
+-- Trigger for FAVOURITE_ITEM table
+CREATE OR REPLACE TRIGGER tr_pkfavouriteitemid
+BEFORE INSERT ON FAVOURITE_ITEM
+FOR EACH ROW
+BEGIN
+    -- Generate a new favourite item id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Favourite_item_id), 0) + 1 INTO :NEW.Favourite_item_id FROM FAVOURITE_ITEM;
+END;
+/
+
+-- Trigger for CART table
+CREATE OR REPLACE TRIGGER tr_pkcartsid
+BEFORE INSERT ON CART
+FOR EACH ROW
+BEGIN
+    -- Generate a new cart id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Cart_id), 0) + 1 INTO :NEW.Cart_id FROM CART;
+END;
+/
+
+-- Trigger for CART_ITEM table
+CREATE OR REPLACE TRIGGER tr_pkcartitemid
+BEFORE INSERT ON CART_ITEM
+FOR EACH ROW
+BEGIN
+    -- Generate a new cart item id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Cart_item_id), 0) + 1 INTO :NEW.Cart_item_id FROM CART_ITEM;
+END;
+/
+
+-- Trigger for COLLECTION_SLOT table
+CREATE OR REPLACE TRIGGER tr_pkcollectionslotid
+BEFORE INSERT ON COLLECTION_SLOT
+FOR EACH ROW
+BEGIN
+    -- Generate a new collection slot id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Collection_slot_id), 0) + 1 INTO :NEW.Collection_slot_id FROM COLLECTION_SLOT;
+END;
+/
+
+-- Trigger for "ORDER" table
+CREATE OR REPLACE TRIGGER tr_pkorderid
+BEFORE INSERT ON "ORDER"
+FOR EACH ROW
+BEGIN
+    -- Generate a new order id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Order_id), 0) + 1 INTO :NEW.Order_id FROM "ORDER";
+END;
+/
+
+-- Trigger for ORDER_ITEM table
+CREATE OR REPLACE TRIGGER tr_pkorderitemid
+BEFORE INSERT ON ORDER_ITEM
+FOR EACH ROW
+BEGIN
+    -- Generate a new order item id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Order_item_id), 0) + 1 INTO :NEW.Order_item_id FROM ORDER_ITEM;
+END;
+/
+
+-- Trigger for PAYMENT table
+CREATE OR REPLACE TRIGGER tr_pkpaymentid
+BEFORE INSERT ON PAYMENT
+FOR EACH ROW
+BEGIN
+    -- Generate a new payment id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Payment_id), 0) + 1 INTO :NEW.Payment_id FROM PAYMENT;
+END;
+/
+
+-- Trigger for REPORT table
+CREATE OR REPLACE TRIGGER tr_pkreportid
+BEFORE INSERT ON REPORT
+FOR EACH ROW
+BEGIN
+    -- Generate a new report id by finding the maximum existing ID and incrementing it by 1
+    SELECT NVL(MAX(Report_id), 0) + 1 INTO :NEW.Report_id FROM REPORT;
+END;
+/

@@ -1,0 +1,12 @@
+CREATE OR REPLACE TRIGGER tr_products_in_cart
+BEFORE INSERT ON cart
+FOR EACH ROW
+DECLARE
+num number(6);
+BEGIN
+    select count(cart_id_id) into num from cart where cart_id = :NEW.cart_id;
+    IF num = 20 THEN
+    raise_application_error(20001, 'There can be only 20 products in a cart at a time.');
+    END IF;
+END;
+/

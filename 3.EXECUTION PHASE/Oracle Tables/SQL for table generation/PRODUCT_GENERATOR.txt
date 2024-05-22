@@ -1,0 +1,47 @@
+-- Inserting data into PRODUCT_CATEGORY table
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (1, 'Bread');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (2, 'Pastry');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (3, 'Bagel');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (4, 'Cake');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (5, 'Doughnut');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (6, 'Cheese');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (7, 'Noodels');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (8, 'Pickle');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (9, 'liquors');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (10, 'Spices');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (11, 'Fresh fruits');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (12, 'Fresh Vegetables');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (13, 'Herbs');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (14, 'Root Vegetables');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (15, 'Salad Ingredents');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (16, 'Shell Fish');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (17, 'Ready-to-eat-sea-food');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (18, 'Fresh Fish');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (19, 'Frozen-sea-food');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (20, 'Pork');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (21, 'Lamb');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (22, 'Bacon');
+INSERT INTO PRODUCT_CATEGORY (Category_id, Category_name)
+VALUES (23, 'Beef');

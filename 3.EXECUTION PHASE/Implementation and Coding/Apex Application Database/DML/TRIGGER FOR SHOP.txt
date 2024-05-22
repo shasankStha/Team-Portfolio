@@ -1,0 +1,9 @@
+CREATE OR REPLACE TRIGGER tr_new_shop
+AFTER INSERT ON "USER"
+FOR EACH ROW
+BEGIN
+    IF :NEW.Role = 'T' THEN
+    INSERT INTO SHOP VALUES (null,null,null,null,null,null,:NEW.User_id);
+    END IF;
+END;
+/
