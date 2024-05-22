@@ -1,0 +1,25 @@
+-- Creating REVIEW table
+CREATE TABLE REVIEW (
+    Review_id NUMBER(8),
+    Rating NUMBER(5),
+    User_comment VARCHAR2(4000),
+    Review_Date DATE,
+    Status CHAR(1),
+    Product_id NUMBER(8),
+    User_id NUMBER(6)
+);
+
+-- Adding primary key constraint for review_id
+ALTER TABLE REVIEW
+ADD CONSTRAINT PK_REVIEW_ID PRIMARY KEY (Review_id);
+
+-- Adding foreign key constraints
+ALTER TABLE REVIEW
+ADD CONSTRAINT FK_REVIEW_PRODUCT_ID FOREIGN KEY (Product_id) REFERENCES PRODUCT(Product_id);
+
+ALTER TABLE REVIEW
+ADD CONSTRAINT FK_REVIEW_USER_ID FOREIGN KEY (User_id) REFERENCES "USER"(User_id);
+
+--Adding check constraint status
+ALTER TABLE REVIEW
+ADD CONSTRAINT chk_review_status check(status in('1','0'));

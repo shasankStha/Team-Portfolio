@@ -1,0 +1,33 @@
+-- Creating PRODUCT table
+CREATE TABLE PRODUCT (
+    Product_id NUMBER(8),
+    Name VARCHAR2(100) unique,
+    Image BLOB,
+    Description VARCHAR2(2000),
+    Price NUMBER(10, 2),
+    Stock_Available NUMBER(8),
+    Min_Order NUMBER(4),
+    Max_Order NUMBER(4),
+    Allergy_Information VARCHAR2(2000),
+    Status CHAR(1),
+    Shop_id NUMBER(4),
+    Category_id NUMBER(4),
+    Discount_id NUMBER(4)
+);
+
+-- Adding primary key constraint for product_id
+ALTER TABLE PRODUCT
+ADD CONSTRAINT PK_PRODUCT_ID PRIMARY KEY (Product_id);
+--Adding check constraint status
+ALTER TABLE PRODUCT
+ADD CONSTRAINT chk_product_status check(status in('1','0'));
+
+-- Adding foreign key constraints
+ALTER TABLE PRODUCT
+ADD CONSTRAINT FK_PRODUCT_SHOP_ID FOREIGN KEY (Shop_id) REFERENCES SHOP(Shop_id);
+
+ALTER TABLE PRODUCT
+ADD CONSTRAINT FK_PRODUCT_CATEGORY_ID FOREIGN KEY (Category_id) REFERENCES PRODUCT_CATEGORY(Category_id);
+
+ALTER TABLE PRODUCT
+ADD CONSTRAINT FK_PRODUCT_DISCOUNT_ID FOREIGN KEY (Discount_id) REFERENCES DISCOUNT(Discount_id);

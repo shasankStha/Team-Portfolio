@@ -1,0 +1,23 @@
+-- Creating PAYMENT table
+CREATE TABLE PAYMENT (
+    Payment_id NUMBER(8),
+    Amount NUMBER(10, 2),
+    Payment_Date DATE,
+    User_id NUMBER(6),
+    Order_id NUMBER(6),
+    Payment_method_id NUMBER(1)
+);
+
+-- Adding primary key constraint for payment_id
+ALTER TABLE PAYMENT
+ADD CONSTRAINT PK_PAYMENT_ID PRIMARY KEY (Payment_id);
+
+-- Adding foreign key constraints
+ALTER TABLE PAYMENT
+ADD CONSTRAINT FK_PAYMENT_USER_ID FOREIGN KEY (User_id) REFERENCES "USER"(User_id);
+
+ALTER TABLE PAYMENT
+ADD CONSTRAINT FK_PAYMENT_ORDER_ID FOREIGN KEY (Order_id) REFERENCES "ORDER"(Order_id);
+
+ALTER TABLE PAYMENT
+ADD CONSTRAINT FK_PAYMENT_PAYMENT_METHOD_ID FOREIGN KEY (Payment_method_id) REFERENCES PAYMENT_METHOD(Payment_method_id);

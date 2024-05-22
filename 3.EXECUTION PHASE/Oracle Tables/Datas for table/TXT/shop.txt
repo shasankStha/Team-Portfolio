@@ -1,0 +1,18 @@
+-- Creating shop table
+CREATE TABLE SHOP (
+    Shop_id NUMBER(4),
+    Shop_name VARCHAR2(100) unique,
+    Shop_description VARCHAR2(2000),
+    Location VARCHAR2(255),
+    Picture BLOB,
+    Contact_number VARCHAR2(10) unique,
+    User_id NUMBER(6)
+);
+
+-- Adding primary key constraint for shop_id
+ALTER TABLE SHOP
+ADD CONSTRAINT PK_SHOP_ID PRIMARY KEY (Shop_id);
+
+-- Adding foreign key constraint for user_id
+ALTER TABLE SHOP
+ADD CONSTRAINT FK_SHOP_USER_ID FOREIGN KEY (User_id) REFERENCES "USER"(User_id);

@@ -1,0 +1,21 @@
+-- Creating user table
+CREATE TABLE "USER" (
+    User_id NUMBER(6),
+    Username VARCHAR2(50) unique,
+    Password VARCHAR2(4000),
+    Email VARCHAR2(100) unique,
+    First_name VARCHAR2(50),
+    Last_name VARCHAR2(50),
+    Contact_number VARCHAR2(10) unique,
+    Role CHAR(1),
+    Created_date DATE,
+    Last_loggedin_date DATE
+);
+
+-- Adding primary key constraint for user_id
+ALTER TABLE "USER"
+ADD CONSTRAINT PK_USER_ID PRIMARY KEY (User_id);
+
+-- Adding check constraint for role
+ALTER TABLE "USER"
+ADD CONSTRAINT CHK_USER_ROLE CHECK (Role IN ('A','T','C'));

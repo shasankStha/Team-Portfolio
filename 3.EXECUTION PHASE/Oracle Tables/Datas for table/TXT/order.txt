@@ -1,0 +1,20 @@
+-- Creating ORDER table
+CREATE TABLE "ORDER" (
+    Order_id NUMBER(8),
+    Order_Date DATE,
+    Total_price NUMBER(10, 2),
+    Payment_confirmation CHAR(1),
+    User_id NUMBER(6),
+    Collection_slot_id NUMBER(4)
+ );
+
+-- Adding primary key constraint for order_id
+ALTER TABLE "ORDER"
+ADD CONSTRAINT PK_ORDER_ID PRIMARY KEY (Order_id);
+
+-- Adding foreign key constraints
+ALTER TABLE "ORDER"
+ADD CONSTRAINT FK_ORDER_USER_ID FOREIGN KEY (User_id) REFERENCES "USER"(User_id);
+
+ALTER TABLE "ORDER"
+ADD CONSTRAINT FK_ORDER_COLLECTION_SLOT_ID FOREIGN KEY (Collection_slot_id) REFERENCES COLLECTION_SLOT(Collection_slot_id);
