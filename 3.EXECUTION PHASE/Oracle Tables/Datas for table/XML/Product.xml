@@ -49,7 +49,7 @@ VALUES (17, 'Pasta Filata', 'Pasta Filata.jpeg', 'Made by soaking the curd in wa
 INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
 VALUES (18, 'Blue Cheeses', 'Blue Cheeses.jpeg', 'Blue varieties include Gorgonzola, Roquefort, and Stilton', 110, 10, 1, 6, 'skin rashess', '1', 2, 6, 2);
 
---Sandwiches
+--noodels
 INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
 VALUES (19, 'Veg Sandwiches', 'Veg Sandwiches.jpeg', 'Sandwiches with 100 % veg items only. ', 5, 10, 1, 4, 'skin rashess', '1', 2, 7, 2);
 INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
@@ -74,7 +74,7 @@ VALUES (26, 'cashew', 'cashew.jpeg', 'Imported from jhapa', 315, 10, 1, 5, 'skin
 INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
 VALUES (27, 'Fox nut', 'Fox nut.jpeg', 'Imported form nepal', 166, 10, 1, 6, 'skin rashess', '1', 2, 9, 2);
 
---Burger
+--liquors
 INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
 VALUES (28, 'Veg Burger', 'Veg Burger.jpeg', 'Veg Burger with 100% veg patties.', 115, 10, 1, 4, 'skin rashess', '1', 2, 10, 2);
 INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
@@ -189,4 +189,3 @@ INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Availabl
 VALUES (68, 'Roast', 'rost.jpeg', 'Cooked whole in an oven or on a grill.', 111, 10, 1, 5, 'skin rashess', '1', 5, 23, 5);
 INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
 VALUES (69, 'Brisket', 'Brisket.jpeg', ' breast or lower chest', 112, 10, 1, 6, 'skin rashess', '1', 5, 23, 5);
-
