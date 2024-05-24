@@ -1,0 +1,31 @@
+-- Inserting data into ORDER_ITEM table
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (1, 2, 999.99, 20.00, 1979.98, 1, 2);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (2, 2, 999.99, 20.00, 1979.98, 2, 4);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (3, 2, 999.99, 20.00, 1979.98, 3, 8);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (4, 2, 999.99, 20.00, 1979.98, 4, 17);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (5, 2, 999.99, 20.00, 1979.98, 5, 19);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (6, 2, 999.99, 20.00, 1979.98, 6, 25);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (7, 2, 999.99, 20.00, 1979.98, 7, 32);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (8, 2, 999.99, 20.00, 1979.98, 8, 35);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (9, 2, 999.99, 20.00, 1979.98, 9, 43);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (10, 2, 999.99, 20.00, 1979.98, 10, 47);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (11, 2, 999.99, 20.00, 1979.98, 11, 49);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (12, 2, 999.99, 20.00, 1979.98, 12, 55);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (13, 2, 999.99, 20.00, 1979.98, 13, 59);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (14, 2, 999.99, 20.00, 1979.98, 14, 63);
+INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
+VALUES (15, 2, 999.99, 20.00, 1979.98, 15, 66);

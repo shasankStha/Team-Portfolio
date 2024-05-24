@@ -1,0 +1,191 @@
+-- Inserting data into REVIEW table
+-- Reviews for Bakery products
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (1, 4.5, 'Absolutely delicious! The baguette had the perfect texture and flavor.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 1, 2);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (2, 4.0, 'Banana bread was moist and flavorful. Would definitely buy again.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 2, 2);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (3, 3.5, 'The breadsticks were a bit dry for my liking, but overall decent.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 3, 2);
+
+-- Reviews for Pastry products
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (4, 5.0, 'The cannoli was divine! Creamy filling and perfect crunch from the shell.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 4, 2);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (5, 4.5, 'Delightful danishes indeed! Loved the variety of fruit fillings.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 5, 2);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (6, 3.0, 'Eclair was good, but I have had better elsewhere. A bit too sweet for me.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 6, 2);
+
+-- Reviews for Bagel products
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (7, 4.0, 'Plain bagels were fresh and chewy. Perfect with cream cheese!', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 7, 2);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (8, 4.5, 'Everything bagels were packed with flavor! Loved the seasoning.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 8, 2);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (9, 3.5, 'Egg bagels were a bit too heavy for my taste, but still enjoyable.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 9, 2);
+
+-- Reviews for Cake products
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (10, 5.0, 'Vanilla lovers cake was heavenly! Moist and delicious.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 10, 2);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (11, 4.5, 'Chocolate lovers cake was rich and decadent. A chocolate lover''s dream!', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 11, 2);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (12, 4.0, 'Butter scotch cake was good, but I wished it had more flavor.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 12, 2);
+
+-- Reviews for Doughnut products
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (13, 4.5, 'Vanilla glaze donut was a perfect treat! Light and fluffy with just the right amount of sweetness.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 13, 2);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (14, 4.0, 'Chocolate glaze donut was delicious, but I prefer a bit more chocolate.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 14, 2);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (15, 3.5, 'Cinnamon sugar donut was good, but a bit too sweet for my taste.', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 15, 2);
+
+--Delicatessen
+--cheese
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (16, 4, 'Great cheese, loved it!', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 16, 3);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+values(17, 3, 'Not bad, but could be better', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 17, 3);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(18, 5, 'Absolutely delicious!', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 18, 3);
+
+--noodels
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (19, 5, 'My favorite instant noodles!', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 19, 3);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+values(20, 4, 'Tasty and quick meal option', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 20, 3);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(21, 3, 'Decent noodles, nothing special', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 21, 3);
+
+--pickel
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (22, 5, 'Delicious cucumber pickles!', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 22, 3);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(23, 4, 'Tangy and spicy, just how I like it', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 23, 3);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(24, 3, 'Average mango pickle, expected more flavor', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 24, 3);
+
+--spicies
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (25, 5, 'Seeds are fresh and aromatic!', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 25, 3);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (26, 4, 'Great quality seeds, perfect for cooking', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 26, 3);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (27, 3, 'Cashews are good, but a bit expensive', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 27, 3);
+ 
+
+ --liquors
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(28, 5, 'Red Label is smooth and rich', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 28, 3);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(29, 4, 'Jack and Dennis has a great taste', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 29, 3);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (30, 3, 'Mustang whisky is unique but not my favorite', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 30, 3);
+
+--greengrocer
+--fresh-fruit
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (31, 5, 'Delicious apples from Mustang!', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 31, 4);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(32, 4, 'Bananas are fresh and sweet', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 32, 4);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (33, 3, 'Mangoes are good, but slightly overripe', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 33, 4);
+
+--green vegetaBLES
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(34, 5, 'Mustard greens are fresh and flavorful', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 34, 4);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(35, 4, 'Broccoli is crisp and tasty', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 35, 4);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(36, 3, 'Spinach is good, but could be fresher', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 36, 4);
+
+--herbs
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (37, 5, 'Curry powder adds great flavor to dishes', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 37, 4);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (38, 4, 'Italian seasoning is perfect for pasta', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 38, 4);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(39, 3, 'Garam masala is good, but I expected more depth of flavor', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 39, 4);
+
+--root vegetables
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (40, 5, 'Carrots are fresh and crunchy', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 40, 4);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (41, 4, 'Potatoes are great for cooking', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 41, 4);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (42, 3, 'Yams are good, but not as sweet as expected', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 42, 4);
+
+--salad ingredents
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (43, 5, 'Kale adds a nice crunch to my salads', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 43, 4);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(44, 4, 'Love the texture that croutons add to my salads', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 44, 4);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(45, 3, 'Tahini is good, but I prefer other salad dressings', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 45, 4);
+
+--Fishmonger
+--shell fish
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (46, 5, 'Shrimps and prawns are delicious!', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 46, 5);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (47, 4, 'Crabs are flavorful and juicy', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 47, 5);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (48, 3, 'Lobsters are good, but a bit overpriced', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 48, 5);
+
+--Ready-to-eat-sea-food
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(49, 5, 'Smoked seafood is delicious and convenient', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 49, 5);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(50, 4, 'Canned seafood is convenient for quick meals', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 50, 5);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(51, 3, 'Seasoned seafood is good, but could use more flavor', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 51, 5);
+
+--Fresh Fish
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(52, 5, 'Salmon is fresh and flavorful', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 52, 5);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(53, 4, 'Tuna has a nice texture and taste', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 53, 5);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(54, 3, 'Halibut is good, but could be fresher', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 54, 5);
+
+--Frozen-sea-food
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (55, 5, 'Fish fillets are great for quick meals', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 55, 5);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(56, 4, 'Shellfish are convenient for cooking', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 56, 5);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(57, 3, 'Shrimp and prawns are good, but could be fresher', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 57, 5);
+
+--Butcher
+--Pork
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (58, 5, 'Fresh pork is excellent quality', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 58, 6);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(59, 4, 'Cured pork has a delicious flavor', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 59, 6);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES(60, 3, 'Offal is good, but requires careful preparation', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 60, 6);
+
+--lamb
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (61, 5, 'Lamb cuts are tender and flavorful', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 61, 6);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (62, 4, 'Ground lamb is versatile and great for various dishes', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 62, 6);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (63, 3, 'Lamb offal is an acquired taste, but good quality', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 63, 6);
+
+
+--Bacon
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (64, 5, 'Pancetta is delicious and flavorful', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 64, 6);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (65, 4, 'Guanciale has a unique taste and adds depth to dishes', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 65, 6);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (66, 3, 'Turkey bacon is a healthier alternative, but lacks some flavor', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 66, 6);
+
+--beef
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (67, 5, 'Steak is tender and juicy', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 67, 6);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (68, 4, 'Roast is flavorful and great for family dinners', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 68, 6);
+INSERT INTO REVIEW (Review_id, Rating, User_comment, Review_Date, Status, Product_id, User_id)
+VALUES (69, 3, 'Brisket requires slow cooking but has good flavor', TO_DATE('2024-04-22', 'YYYY-MM-DD'), '1', 69, 6);
+

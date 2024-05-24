@@ -1,0 +1,15 @@
+-- Inserting data into USER table
+INSERT INTO "USER" (User_id, Username, Password, Email, First_name, Last_name, Contact_number, Role, Created_date, Last_loggedin_date)
+VALUES (1, 'sushan', 'Sushan@12', 'sushan@gmail.com', 'Sushan', 'Bhandari', '9860672343', 'A', TO_DATE('2024-02-12', 'YYYY-MM-DD'), TO_DATE('2024-02-16', 'YYYY-MM-DD'));
+INSERT INTO "USER" (User_id, Username, Password, Email, First_name, Last_name, Contact_number, Role, Created_date, Last_loggedin_date)
+VALUES (2, 'shasank', 'Sushan@12', 'shasank@gmail.com', 'Shasank', 'Shrestha', '9812312322', 'T', TO_DATE('2024-03-12', 'YYYY-MM-DD'), TO_DATE('2024-03-18', 'YYYY-MM-DD'));
+INSERT INTO "USER" (User_id, Username, Password, Email, First_name, Last_name, Contact_number, Role, Created_date, Last_loggedin_date)
+VALUES (3, 'biraj', 'Sushan@12', 'biraj@gmail.com', 'biraj', 'Shrestha', '9860190900', 'T', TO_DATE('2024-01-12', 'YYYY-MM-DD'), TO_DATE('2024-01-18', 'YYYY-MM-DD'));
+INSERT INTO "USER" (User_id, Username, Password, Email, First_name, Last_name, Contact_number, Role, Created_date, Last_loggedin_date)
+VALUES (4, 'amulya', 'Sushan@12', 'amulya@gmail.com', 'amulya', 'Shrestha', '9861212342', 'T', TO_DATE('2024-01-13', 'YYYY-MM-DD'), TO_DATE('2024-01-18', 'YYYY-MM-DD'));
+INSERT INTO "USER" (User_id, Username, Password, Email, First_name, Last_name, Contact_number, Role, Created_date, Last_loggedin_date)
+VALUES (5, 'billyas', 'Sushan@12', 'billyas@gmail.com', 'Billyas', 'Maharjan', '9860145678', 'T', TO_DATE('2024-01-12', 'YYYY-MM-DD'), TO_DATE('2024-01-18', 'YYYY-MM-DD'));
+INSERT INTO "USER" (User_id, Username, Password, Email, First_name, Last_name, Contact_number, Role, Created_date, Last_loggedin_date)
+VALUES (6, 'abhishek', 'Sushan@12', 'Abhishek@gmail.com', 'Abhishek', 'Poudel', '9860190923', 'T', TO_DATE('2024-01-12', 'YYYY-MM-DD'), TO_DATE('2024-01-18', 'YYYY-MM-DD'));
+INSERT INTO "USER" (User_id, Username, Password, Email, First_name, Last_name, Contact_number, Role, Created_date, Last_loggedin_date)
+VALUES (7, 'soya', 'Sushan@12', 'soya@gmail.com', 'Soya', 'Shrestha', '9860198970', 'C', TO_DATE('2024-01-12', 'YYYY-MM-DD'), TO_DATE('2024-01-18', 'YYYY-MM-DD'));

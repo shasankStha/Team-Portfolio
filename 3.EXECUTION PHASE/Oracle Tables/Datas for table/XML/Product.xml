@@ -1,0 +1,192 @@
+-- Inserting data into PRODUCT table
+--Bakery
+--bread
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (1, 'Buguette', 'buguettes.jpeg', 'chewy interior riddled with holes, and a crisp, deep-golden crust', 2, 100, 1, 5, 'skin rashess', '1', 1, 1, 1);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (2, 'Banana Bread', 'banana.jpeg', 'dense, moist, sweet treats, usually chemically leavened with baking soda or baking powde', 3, 100, 1, 5, 'Gluten', '1', 1, 1, 1);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (3, 'Breadstick', 'breadstick.jpeg', 'pencil-thin dry bread sitting atop', 4, 100, 1, 5, 'skin rashess', '1', 1, 1, 1);
+
+--pastry
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (4, 'The Cannoli', 'cannoli.jpeg', 'loaded up with a sweet, creamy ricotta cheese blend, and topped with a garnish of chocolate chips or crushed pistachio', 4, 100, 1, 5, 'skin rashess', '1', 1, 2, 1);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (5, 'Delightful Danishes', 'Delightful Danishes.jpeg', 'Made with such fruity, berry fillings as apple, raspberry, blueberry, and cherry', 6, 100, 1, 5, 'skin rashess', '1', 1, 2, 1);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (6, 'Eclair', 'Eclair.jpeg', 'filled with custard, chocolate, or any other type of cream, and frosted on the top of the pastry', 7, 100, 1, 10, 'skin rashess', '1', 1, 2, 1);
+
+
+--begel
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (7, 'Plain bagels', 'Plain bagels.jpeg', 'the most boring bagel in the bunch, the plain bagel is a versatile canvas for sweet and savory schmears.', 10, 100, 1, 5, 'skin rashess', '1', 1, 3, 1);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (8, 'Everything bagels', 'Everything bagels.jpeg', 'savory bagels are topped with a mixture of everything bagel seasoning, including garlic powder, onion powder, poppy seeds, sesame seeds, and sea salt.', 12, 100, 1, 5, 'skin rashess', '1', 1, 3, 1);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (9, 'Egg bagels', 'Egg bagels.jpeg', 'mix eggs into bagel dough', 17, 100, 1, 10, 'skin rashess', '1', 1, 3, 1);
+
+--Cake
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (10, 'Vannila lovers', 'Vannila lovers.jpeg', 'Made up of wheat floor and vanila cream.', 50, 10, 1, 4, 'skin rashess', '1', 1, 4, 1);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (11, 'Choclate lovers', 'Choclate lovers.jpeg', 'Made up of wheat floor and choclate cream.', 50, 10, 1, 5, 'skin rashess', '1', 1, 4, 1);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (12, 'Butter Scotch', 'Butter Scotch.jpeg', 'Made up of wheate floor and butter scotch cream', 50, 10, 1, 6, 'skin rashess', '1', 1, 4, 1);
+
+--Doughnut
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (13, 'Vanilla glaze', 'Vanilla glaze.jpeg', 'Made up of wheat floor and vanila cream.', 10, 10, 1, 4, 'skin rashess', '1', 1, 5, 1);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (14, 'Chocolate Glaze', 'chocolate glaze.jpeg', 'Made up of wheat floor and choclate cream.', 10, 10, 1, 5, 'skin rashess', '1', 1, 5, 1);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (15, 'Cinnamon sugar', 'Cinnamon sugar.jpeg', 'Made up of wheate floor and cannamon sugar', 10, 10, 1, 6, 'skin rashess', '1', 1, 5, 1);
+--Delicatessen
+--Cheese
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (16, 'Hard Cheeses', 'Hard Cheeses.jpeg', 'Removes moisture from the cheese making it harder and drier than soft cheese', 70, 10, 1, 4, 'skin rashess', '1', 2, 6, 2);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (17, 'Pasta Filata', 'Pasta Filata.jpeg', 'Made by soaking the curd in water until it is sufficiently elastic.', 90, 10, 1, 5, 'skin rashess', '1', 2, 6, 2);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (18, 'Blue Cheeses', 'Blue Cheeses.jpeg', 'Blue varieties include Gorgonzola, Roquefort, and Stilton', 110, 10, 1, 6, 'skin rashess', '1', 2, 6, 2);
+
+--Sandwiches
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (19, 'Veg Sandwiches', 'Veg Sandwiches.jpeg', 'Sandwiches with 100 % veg items only. ', 5, 10, 1, 4, 'skin rashess', '1', 2, 7, 2);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (20, 'Chicken Sandwiches', 'Chicken Sandwiches', 'Sandwiches with fresh chicken' , 5, 10, 1, 5, 'skin rashess', '1', 2, 7, 2);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (21, 'Ham Sandwiches', 'Ham Sandwichest.jpeg', 'Sandwiches with fresh ham. ', 6, 10, 1, 6, 'skin rashess', '1', 2, 7, 2);
+
+
+--pickel
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (22, 'Cucumber', 'cucumber.jpeg', 'Spicy pickel made up of with cucumber.', 15, 10, 1, 4, 'skin rashess', '1', 2, 8, 2);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (23, 'Mango', 'Mango.jpeg', 'Shower and spicy pickel made up of with mango.', 15, 10, 1, 5, 'skin rashess', '1', 2, 8, 2);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (24, 'Nepalese Hog Plum', 'Nepalese Hog Plum.jpe', 'Hot and spicy pickel made up of with Nepalese Hog Plum', 16, 10, 1, 6, 'skin rashess', '1', 2, 8, 2);
+
+--Spices
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (25, 'Seeds', 'Seeds.jpeg', 'Came from the reproductive parts of plants. They can be used whole or ground.', 15, 10, 1, 4, 'skin rashess', '1', 2, 9, 2);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (26, 'cashew', 'cashew.jpeg', 'Imported from jhapa', 315, 10, 1, 5, 'skin rashess', '1', 2, 9, 2);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (27, 'Fox nut', 'Fox nut.jpeg', 'Imported form nepal', 166, 10, 1, 6, 'skin rashess', '1', 2, 9, 2);
+
+--Burger
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (28, 'Veg Burger', 'Veg Burger.jpeg', 'Veg Burger with 100% veg patties.', 115, 10, 1, 4, 'skin rashess', '1', 2, 10, 2);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (29, 'Chicken Burger', 'Chicken Burger.jpeg', 'Chicken burger with fresh chicken patties', 115, 10, 1, 5, 'skin rashess', '1', 2, 10, 2);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (30, 'Ham Burger ', 'Ham Burger.jpeg', 'Ham burger wit fresh Ham patties.', 116, 10, 1, 6, 'skin rashess', '1', 2, 10, 2);
+
+--Green Gocer
+--Fresh fruits
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (31, 'Apples', 'Apples.jpeg', 'Fresh red organic apples ', 110, 10, 1, 4, 'skin rashess', '1', 3, 11, 3);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (32, 'Bananas', 'Bananas.jpeg', 'Fresh yellow  organic banana ', 115, 10, 1, 5, 'skin rashess', '1', 3, 11, 3);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (33, 'Mangos', 'Mangos.jpeg', 'Fresh yellow organic mango', 116, 10, 1, 6, 'skin rashess', '1', 3, 11, 3);
+
+--green vegetables
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (34, 'Mustard green', 'Mustard green.jpeg', 'Exported from local farmers', 10, 10, 1, 4, 'skin rashes', '1', 3, 12, 3);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (35, 'Broccoli', 'Broccoli.jpeg', 'Dense, green flower heads and stalks, high in vitamins C and K, and fiber.', 11, 10, 1, 5, 'skin rashess', '1', 3, 12, 3);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (36, 'Spinach','Spinach.jpeg', 'Soft, tender leaves with a mild flavor, rich in iron, calcium, and vitamins A and C.', 11, 10, 1, 6, 'skin rashess', '1', 3, 12, 3);
+
+--Herbs
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (37, ' Curry powder', 'Curry powder.jpeg', 'Made up of fresh local curry', 10, 10, 1, 4, 'skin rashess', '1', 3, 13, 3);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (38, 'Italian seasoning', 'Italian seasoning.jpeg', 'Made up of local incredents found in italy.', 11, 10, 1, 5, 'skin rashess', '1', 3, 13,3 );
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (39, 'Garam masala', 'Garam masala.jpeg', 'Made up of special masala found in local village in nepal.', 11, 10, 1, 6, 'skin rashess', '1', 3, 13, 3);
+
+--Root Vegetables
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (40, ' Carrots', 'Carrots.jpeg', 'Grown in village in nepal', 11, 10, 1, 4, 'skin rashess', '1', 3, 14, 3);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (41, 'Potatoes', 'Potatoes.jpeg', 'Grown in mountain.', 11, 10, 1, 5, 'skin rashess', '1', 3, 14,3 );
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (42, 'Yams', 'Yams.jpeg', 'Typically starchy and less sweet than sweet potatoes, often confused with them in North America.', 111, 10, 1, 6, 'skin rashess', '1', 3, 14, 3);
+
+--Salad Ingredents
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (43, ' Kale', 'Kale.jpeg', 'Hearty, slightly bitter leaves that add a robust texture.', 11, 10, 1, 4, 'skin rashess', '1', 3, 15, 3);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (44, 'Croutons ', 'Croutons.jpeg', 'Toasted bread cubes, adding a crunchy texture.', 11, 10, 1, 5, 'skin rashess', '1', 3, 15, 3 );
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (45, 'Tahini', 'Tahini.jpeg', ' Nutty and creamy, often used in Middle Eastern salads.', 111, 10, 1, 6, 'skin rashess', '1', 3, 15, 3);
+
+--Fish monger
+--Shell Fish
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (46, ' Shrimps and Prawns', 'Shrimps and Prawns.jpeg', ' Small, elongated bodies with a primary role in various cuisines worldwide.', 11, 10, 1, 4, 'skin rashess', '1', 4, 16, 4);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (47, 'Crabs ', 'Crabs.jpeg', 'Known for their broad, flat bodies and pincers.', 11, 10, 1, 5, 'skin rashess', '1', 4, 16, 4 );
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (48, 'Lobsters', 'Lobsters.jpeg', 'Large marine crustaceans with long bodies and muscular tails, often considered a delicacy.', 111, 10, 1, 6, 'skin rashess', '1', 4, 16, 4);
+
+--Ready-to-eat-sea-food
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (49, ' Smoked Seafood', 'Smoked Seafood.jpeg', ' This includes items like smoked salmon, trout, mackerel, and other fish. These products are often ready to eat as-is, making them a popular choice for appetizers, salads, or sandwiches', 11, 10, 1, 4, 'skin rashess', '1', 4, 17, 4);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (50, 'Canned Seafood ', 'Canned Seafood.jpeg', 'Tuna, salmon, sardines, and mackerel. These are shelf-stable and can be easily added to salads, pastas, or eaten s', 11, 10, 1, 5, 'skin rashess', '1', 4, 17, 4 );
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (51, 'Seasoned Seafood', 'Seasoned Seafood.jpeg', 'pre-marinated or seasoned, ready to be served cold or with minimal further preparation.', 111, 10, 1, 6, 'skin rashess', '1', 4, 17, 4);
+
+--Fresh Fish
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (52, ' Salmon', 'Salmon.jpeg', 'Salmon is a popular, oily fish known for its rich, distinctive flavor and high nutritional value.', 11, 10, 1, 4, 'skin rashess', '1', 4, 18, 4);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (53, 'Tuna ', 'Tuna.jpeg', 'Tuna is a lean, firm fish with a meaty texture and a mild flavor. It is often used in sushi and sashimi, as well as seared or grilled dishes.', 11, 10, 1, 5, 'skin rashess', '1', 4, 18, 4 );
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (54, 'Halibut', 'Halibut.jpeg', 'Halibut is a large, flatfish with a firm, dense texture and a sweet, mild flavor.', 111, 10, 1, 6, 'skin rashess', '1', 4, 18, 4);
+
+--Frozen-sea-food
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (55, ' Fish Fillets', 'Fish Fillets.jpeg', 'Came from a variety of fish species such as salmon, cod, tilapia, and haddock.', 11, 10, 1, 4, 'skin rashess', '1', 4, 19, 4);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (56, 'Shellfish ', 'Shellfish.jpeg', 'frozen crab, lobster tails, mussels, and clams.', 11, 10, 1, 5, 'skin rashess', '1', 4, 19, 4 );
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (57, 'Shrimp and Prawns', 'Shrimp and Prawns frozen.jpeg', 'popular seafood choices and are often frozen shortly after being caught to maintain freshness. ', 111, 10, 1, 6, 'skin rashess', '1', 4, 19, 4);
+
+--Butcher
+--Pork
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (58, 'Fresh Pork', 'Fresh Pork.jpeg', 'Cured, smoked, or processed in any way beyond basic butchering.', 110, 10, 1, 4, 'skin rashess', '1', 5, 20, 5);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (59, 'Cured Pork', 'Cured Pork.jpeg', 'Curing, which involves using salt, sugar, and sometimes other seasonings.', 111, 10, 1, 5, 'skin rashess', '1', 5, 20, 5);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (60, 'Offal', 'Offal.jpeg', 'Internal organs of the pig, such as the liver, kidneys, heart, and intestines.', 112, 10, 1, 6, 'skin rashess', '1', 5, 20, 5);
+
+--lamb
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (61, 'Lamb Cuts', 'Lamb Cuts.jpeg', 'Lamb chops, lamb shoulder, lamb leg (whole or as bone-in or boneless roasts), lamb loin, lamb rack, and lamb shanks. ', 110, 10, 1, 4, 'skin rashess', '1', 5, 21, 5);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (62, 'Ground Lamb', 'Ground Lamb.jpeg', 'Made by grinding lamb meat, often a combination of different cuts.', 111, 10, 1, 5, 'skin rashess', '1', 5, 21, 5);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (63, 'Lamb Offal', 'Lamb Offal.jpeg', 'liver, kidneys, heart, and intestines, is also consumed in many cuisines around the world.', 112, 10, 1, 6, 'skin rashess', '1', 5, 21, 5);
+
+--Bacon
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (64, 'Pancetta', 'Pancetta.jpeg', 'salt-cured and often seasoned with spices like pepper, garlic, and juniper berries.', 110, 10, 1, 4, 'skin rashess', '1', 5, 22, 5);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (65, 'Guanciale', 'Guanciale.jpeg', 'Made from pork jowl or cheek.', 111, 10, 1, 5, 'skin rashess', '1', 5, 22, 5);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (66, 'Turkey Bacon', 'Turkey Bacon.jpeg', 'Made from ground turkey mixed with seasonings, formed into strips, and then smoked.', 112, 10, 1, 6, 'skin rashess', '1', 5, 22, 5);
+
+
+--Beef
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (67, 'Steak', 'Steak.jpeg', 'Sliced perpendicular to the muscle fibers, typically grilled, pan-seared, or broiled. ', 110, 10, 1, 4, 'skin rashess', '1', 5, 23, 5);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (68, 'Roast', 'rost.jpeg', 'Cooked whole in an oven or on a grill.', 111, 10, 1, 5, 'skin rashess', '1', 5, 23, 5);
+INSERT INTO PRODUCT (Product_id, Name, Image, Description, Price, Stock_Available, Min_Order, Max_Order, Allergy_Information, Status, Shop_id, Category_id, Discount_id)
+VALUES (69, 'Brisket', 'Brisket.jpeg', ' breast or lower chest', 112, 10, 1, 6, 'skin rashess', '1', 5, 23, 5);
+
