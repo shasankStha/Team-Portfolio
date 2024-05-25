@@ -1,12 +1,12 @@
 -- Inserting data into PAYMENT table
 INSERT INTO PAYMENT (Payment_id, Amount, Payment_Date, User_id, Order_id, Payment_method_id)
-VALUES (1, 1979.98, TO_DATE('2024-04-29', 'YYYY-MM-DD'), 2 , 2 , 1 );
+VALUES (1, 1979.98, TO_DATE('2024-04-29', 'YYYY-MM-DD'), 7 , 2 , 1 );
 INSERT INTO PAYMENT (Payment_id, Amount, Payment_Date, User_id, Order_id, Payment_method_id)
-VALUES (2, 1979.98, TO_DATE('2024-04-29', 'YYYY-MM-DD'), 3, 4 , 2 );
+VALUES (2, 1979.98, TO_DATE('2024-04-29', 'YYYY-MM-DD'), 8, 4 , 2 );
 INSERT INTO PAYMENT (Payment_id, Amount, Payment_Date, User_id, Order_id, Payment_method_id)
-VALUES (3, 1979.98, TO_DATE('2024-04-29', 'YYYY-MM-DD'), 4, 8 , 1 );
+VALUES (3, 1979.98, TO_DATE('2024-04-29', 'YYYY-MM-DD'), 13, 8 , 1 );
 INSERT INTO PAYMENT (Payment_id, Amount, Payment_Date, User_id, Order_id, Payment_method_id)
-VALUES (4, 1979.98, TO_DATE('2024-04-29', 'YYYY-MM-DD'), 5, 11 , 2 );
+VALUES (4, 1979.98, TO_DATE('2024-04-29', 'YYYY-MM-DD'), 15, 11 , 2 );
 INSERT INTO PAYMENT (Payment_id, Amount, Payment_Date, User_id, Order_id, Payment_method_id)
-VALUES (5, 1979.98, TO_DATE('2024-04-29', 'YYYY-MM-DD'), 6, 14 , 1 );
+VALUES (5, 1979.98, TO_DATE('2024-04-29', 'YYYY-MM-DD'), 14, 14 , 1 );
 

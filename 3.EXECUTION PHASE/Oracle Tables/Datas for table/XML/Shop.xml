@@ -1,11 +1,12 @@
 -- Inserting data into SHOP table
 INSERT INTO SHOP (Shop_id, Shop_name, Shop_description, Location, Picture, Contact_number, User_id)
-VALUES (1, 'Bakery', 'All types of Baked Product.', 'thapathali', NULL, '9876123456', 2);
+VALUES (1, 'Bakery', 'All types of Baked Product.', 'thapathali', 'Bakery.jpeg', '9876123456', 2);
 INSERT INTO SHOP (Shop_id, Shop_name, Shop_description, Location, Picture, Contact_number, User_id)
-VALUES (2, 'Delicatessen', 'All types of grocery items. ', 'Sorakhuttya', NULL, '9841234765', 3);
+VALUES (2, 'Delicatessen', 'All types of grocery items. ', 'Sorakhuttya', 'Delicatessen.jpeg', '9841234765', 3);
 INSERT INTO SHOP (Shop_id, Shop_name, Shop_description, Location, Picture, Contact_number, User_id)
-VALUES (3, 'Green Gocer', 'All types of green vegetables.', 'Bhaktapur', NULL, '9670892300', 4);
+VALUES (3, 'Green Gocer', 'All types of green vegetables.', 'Bhaktapur', 'greengrocershop.jpeg', '9670892300', 4);
 INSERT INTO SHOP (Shop_id, Shop_name, Shop_description, Location, Picture, Contact_number, User_id)
-VALUES (4, 'Fishmonger', 'All types of see foods.', 'Chapagau', NULL, '9824235489', 5);
+VALUES (4, 'Fishmonger', 'All types of see foods.', 'Chapagau', 'Fishmonger.jpeg', '9824235489', 5);
 INSERT INTO SHOP (Shop_id, Shop_name, Shop_description, Location, Picture, Contact_number, User_id)
-VALUES (5, 'Butcher', 'All types of Meat.', 'Koteshowr', NULL, '9814523798', 6);
+VALUES (5, 'Butcher', 'All types of Meat.', 'Koteshowr', 'butchershop.jpeg', '9814523798', 6);
+

@@ -1,3 +1,4 @@
+
 -- Inserting data into ORDER_ITEM table
 INSERT INTO ORDER_ITEM (Order_item_id, Quantity, Price, Discount, Total_Amount, Order_id, Product_id)
 VALUES (1, 2, 999.99, 20.00, 1979.98, 1, 2);
